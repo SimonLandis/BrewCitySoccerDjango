@@ -1,0 +1,74 @@
+body {
+    background: #f8f9fa;
+    color: white;
+}
+.dropdown-menu.show {
+    text-align: center;
+}
+.bg-dark {
+    background: #14213D!important;
+}
+a:hover, a:focus {
+    color: white;
+}
+h2 {
+    font-family: 'Merriweather', serif
+}
+p{
+    font-family: 'Merriweather', serif
+}
+
+.home-info {
+    color: #14213D;
+    text-align: center;
+}
+
+li.nav-item {
+    display: flex;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fca311;
+}
+.card {
+    margin: 1vw;
+    text-align: center;
+}
+.card:hover {
+    box-shadow: 0 0 20px rgba(252, 163, 17, 1);
+}
+.card-group {
+    height: 60vh;
+}
+.head-banner {
+    width: 100%;
+    text-align: center;
+    background-color: #e8eddf;
+    padding: 3%;
+    font-family: Chivo, sans-serif;
+    color: aliceblue;
+
+}
+.login-role {
+    margin-right: 2vw;
+}
+form {
+    text-align: center;
+    width: 30vw;
+    background: aqua;
+    height: 70vh;
+    border-radius: 5%;
+}
+.content-section {
+    text-align: center;
+    margin-left: 40vw;
+    margin-right: auto;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+

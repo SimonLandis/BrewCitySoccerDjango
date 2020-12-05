@@ -1,0 +1,17 @@
+{% extends "add_base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <form class="results-update" method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Update Result</legend>
+                    <h4>{{ result.game.home_team.name|capfirst }} vs {{ result.game.away_team.name|capfirst }}</h4>
+                    {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}

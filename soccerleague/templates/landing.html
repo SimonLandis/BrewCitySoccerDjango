@@ -1,0 +1,24 @@
+{% extends "landing_base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section">
+        <div class="login-block">
+            <div class="intro-brewcity">
+                <h2>Welcome to Brew City Soccer</h2>
+                <p>This is a demo/mini build of a soccer sports league website.</p>
+                <p>You can login in with username and pword to try out the site.</p>
+                <p>You can also follow <a href="{% url 'home' %}">THIS</a> link to look at the site without logging in. </p>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Login</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{%  extends "base.html" %}
+{% block content %}
+<div class="teams">
+    {% for team in teams %}
+        <a href="{% url 'team_detail' team.id %}">
+            <p>{{ team.name }}</p>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}

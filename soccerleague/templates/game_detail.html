@@ -1,0 +1,18 @@
+{%  extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2 class="team-name">{{ team.name|capfirst }}</h2>
+    <div class="row">
+        <div class="col-left">
+        <h3>Games</h3>
+            {% for game in games %}
+                {% if result.game.home_team.name == team.name %}
+                    <p>{{ team.name }} {{ result.score_hometeam }} vs {{ result.game.away_team.name }} {{ result.score_awayteam  }} {{ result.game.date }}</p>
+                {% elif result.game.away_team.name == team.name %}
+                    <p>{{ team.name }} {{ result.score_awayteam }} at {{ result.game.home_team.name }} {{ result.score_hometeam }} {{ result.game.date }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

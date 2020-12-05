@@ -1,0 +1,31 @@
+{%  extends "base_home.html" %}
+{% load static %}
+{% block content %}
+    <div class="home-info">
+        <h2>Welcome To Brew City Soccer</h2>
+        <p>For this demo version you can adjust the scores of previous games, create brand new games, sign up as a player, or create a brand new team of your own.</p>
+    </div>
+    <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="{% static "images/ref.jpg" %}" alt="Noelle Otto ">
+    <div class="card-body">
+        <h5 class="card-title"><a href="{% url 'game_add' %}">Referee Portal</a></h5>
+      <p class="card-text">This link will allow you to create a new game. You're also able to adjust the scores via the results page.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static "images/manager.jpg" %}" alt="Craig Adderley">
+    <div class="card-body">
+        <h5 class="card-title"><a href="{% url 'teams_add' %}">Team Captain Portal</a></h5>
+      <p class="card-text">Follow this link to create a new team.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static "images/freeagent.jpg" %}" alt="RF._.studio">
+    <div class="card-body">
+        <h5 class="card-title"><a href="{% url 'player_add' %}">New Player Portal</a></h5>
+      <p class="card-text">Follow this link to add yourself to the any of the pre-made teams.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

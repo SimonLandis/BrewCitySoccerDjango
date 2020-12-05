@@ -1,0 +1,136 @@
+.content-section {
+    text-align: center;
+    color: white;
+}
+.border-bottom.mb-4 {
+    color: white;
+}
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: black;
+}
+body {
+    background: #14213D;
+}
+header{
+    background-color: #14213D;
+}
+li.nav-item {
+    display: flex;
+    text-align: center;
+}
+.login-role{
+    margin-right: 2vw;
+}
+.bg-dark {
+    background: #14213D!important;
+}
+a:hover, a:focus {
+    color: white;
+}
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow: none;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fca311;
+}
+.col-right {
+    float: right;
+    width: 40%;
+    text-align: center;
+    margin-top: 5vh;
+}
+.col-right a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.col-right h3{
+    color: white;
+}
+.col-left {
+    float: left;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-top: 5vh;
+}
+.col-left a{
+    color: aquamarine;
+}
+.col-left h3 {
+    text-align: center;
+    color: white;
+}
+h2.team-name {
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+}
+.col-left p {
+    color: white;
+}
+.teams {
+    text-align: center;
+    margin-top: 5vh;
+}
+.teams a{
+    color: aquamarine;
+    font-family: Chivo, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+}
+.about{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.table-responsive {
+    color: white;
+    text-align: center;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.results h2{
+    text-align: center;
+    color: white;
+}
+th{
+    text-align: center;
+}
+.player-info{
+    text-align: center;
+    color: white;
+}
+.dropdown-menu.show {
+    text-align: center;
+}
+.dropdown-menu.show {
+    text-align: center;
+}
+.table{
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #33A1FD;
+    width: 100%;
+    color: white;
+    padding: 0;
+}
+.nav-item.nav-link {
+    color: #17a2b8;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+}

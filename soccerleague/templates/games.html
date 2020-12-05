@@ -1,0 +1,20 @@
+{%  extends "base.html" %}
+{% block content %}
+<div class="results">
+    <div class="table-responsive table-bordered">
+        <table class="table table">
+            <tr>
+                <th>Home Team</th>
+                <th>Away Team</th>
+            </tr>
+            {% for game in games %}
+            <tr>
+                <td>{{ game.home_team.name }} {{ game.result.score_hometeam }}</td>
+                <td>{{ game.away_team.name }} {{ game.result.score_awayteam }}</td>
+                <td><a href="{% url 'result_add' %}">Edit Score</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}
